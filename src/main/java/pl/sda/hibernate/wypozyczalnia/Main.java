@@ -1,6 +1,6 @@
 package pl.sda.hibernate.wypozyczalnia;
 
-import pl.sda.hibernate.wypozyczalnia.komendy.Komenda;
+import pl.sda.hibernate.wypozyczalnia.komendy.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,19 @@ public class Main {
 
         List<Komenda> listaKomend = new ArrayList<>(
                 List.of(
-
+                        new KomendaDodajKlient(),
+                        new KomendaDodajSamochod(),
+                        new KomendaDodajWypozyczenie(),
+                        new KomendaDodajZwrot(),
+                        new KomendaListaKlient(),
+                        new KomendaListaSamochod(),
+                        new KomendaListaWypozyczenie(),
+                        new KomendaListaZwrot(),
+                        new KomendaUsunKlient(),
+                        new KomendaUsunSamochod(),
+                        new KomendaUsunWypozyczenie(),
+                        new KomendaUsunZwrot(),
+                        new KomendaZakonczWypozyczenie()
                 )
         );
         String komenda;
@@ -20,6 +32,7 @@ public class Main {
                 // wiersz po wierszu wypisza sie komendy w formie:
                 // 1. dodaj x
                 // 2. dodaj y...
+
 
                 System.out.println((i + 1) + ". " + listaKomend.get(i).getKomenda());
             }

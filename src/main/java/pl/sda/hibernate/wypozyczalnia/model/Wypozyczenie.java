@@ -19,9 +19,10 @@ public class Wypozyczenie {
     @CreationTimestamp
     private LocalDateTime dataWypozyczenia;
 
-    private LocalDateTime dataKoncowaWypozyczenia;
     private String numerUmowy;
+
     private Double cenaNajmu;
+    private LocalDateTime dataKoncowaWypozyczenia;
 
     @ManyToOne
     @ToString.Exclude
