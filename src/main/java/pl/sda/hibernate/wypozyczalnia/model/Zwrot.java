@@ -22,7 +22,7 @@ public class Zwrot {
 
     private String notatkaUsterki;
 
-    @OneToOne(mappedBy = "zwrot")
+    @OneToOne
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Wypozyczenie wypozyczenie;

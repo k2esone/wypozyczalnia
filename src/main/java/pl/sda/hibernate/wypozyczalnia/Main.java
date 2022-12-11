@@ -14,6 +14,7 @@ public class Main {
                         new KomendaDodajSamochod(),
                         new KomendaDodajWypozyczenie(),
                         new KomendaDodajZwrot(),
+                        new KomendaZnajdzKlient(),
                         new KomendaListaKlient(),
                         new KomendaListaSamochod(),
                         new KomendaListaWypozyczenie(),
